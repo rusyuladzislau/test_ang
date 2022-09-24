@@ -1,0 +1,12 @@
+{
+  "COMMON": {
+    "LOADER_MESSAGE": "טעינה....",
+    "NOT_FOUND_MESSAGE": "הדף לא נמצא"
+  },
+  "ABOUT_PAGE": {  
+    "ABOUT_LINK_NAME": "מידע",
+    "COURSES_LINK_NAME": "קורסים",
+    "TEACHER_LINK_NAME": "מורים",
+    "CONTACTS_LINK_NAME": "אנשי קשר"
+  }
+}

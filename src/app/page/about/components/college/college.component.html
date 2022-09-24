@@ -1,0 +1,35 @@
+<main *ngIf="(college$ | async) as college; else loader">
+    <section class="college-main-info">
+        <div class="college-main-info-header">
+            <div class="img-block">
+                <img src="{{ college.photo }}" alt=""/>
+            </div>
+            <h1>{{ college.name }}</h1>
+        </div>
+        <div class="college-main-info-nav">
+            <nav>
+                <ul>
+                    <li>
+                        <a [routerLink]="['/about']" class="active">{{ 'ABOUT_PAGE.ABOUT_LINK_NAME' | translate }}</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/courses']">{{ 'ABOUT_PAGE.COURSES_LINK_NAME' | translate }}</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/teachers']">{{ 'ABOUT_PAGE.TEACHER_LINK_NAME' | translate }}</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/contacts']">{{ 'ABOUT_PAGE.CONTACTS_LINK_NAME' | translate }}</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <section class="college-description">
+        <div [innerHTML]="college.about"></div>
+    </section>
+</main>
+
+<ng-template #loader>
+    <span>{{ 'COMMON.LOADER_MESSAGE' | translate }}</span>
+</ng-template>

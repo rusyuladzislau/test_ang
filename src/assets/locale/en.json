@@ -1,0 +1,12 @@
+{
+  "COMMON": {
+    "LOADER_MESSAGE": "Loading...",
+    "NOT_FOUND_MESSAGE": "Page not found"
+  },
+  "ABOUT_PAGE": {  
+    "ABOUT_LINK_NAME": "About",
+    "COURSES_LINK_NAME": "Courses",
+    "TEACHER_LINK_NAME": "Teacher",
+    "CONTACTS_LINK_NAME": "Contacts"
+  }
+}
